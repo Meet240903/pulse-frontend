@@ -1,0 +1,43 @@
+.blog-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-10px);
+}
+
+.blog-card-image {
+  width: 100%;
+  height: auto;
+}
+
+.blog-card-category {
+  font-size: 0.9rem;
+  color: #888;
+  padding: 10px;
+}
+
+.blog-card-title {
+  font-size: 1.5rem;
+  margin: 10px;
+}
+
+.blog-card-description {
+  font-size: 1rem;
+  margin: 10px;
+  color: #555;
+}
+
+.blog-card-read-more {
+  font-size: 1rem;
+  color: #00ad6a;
+  text-decoration: none;
+  margin: 10px;
+  align-self: flex-start;
+}

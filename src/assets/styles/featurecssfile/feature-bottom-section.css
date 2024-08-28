@@ -1,0 +1,77 @@
+.feature-bottom-section {
+  display: flex;
+  flex-direction: column; /* Stack items vertically on smaller screens */
+  align-items: center; /* Center items horizontally */
+  justify-content: center;
+  padding: 3rem 1rem; /* Adjust padding for smaller screens */
+  text-align: center; /* Center text for better readability */
+}
+
+.feature-bottom-section h1 {
+  font-size: 2.5rem; /* Adjust font size for smaller screens */
+  margin-bottom: 2rem; /* Add margin for spacing */
+}
+
+.feature-bottom-section-content {
+  display: flex;
+  flex-direction: column; /* Stack items vertically on smaller screens */
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px; /* Limit maximum width */
+  margin: 0 auto; /* Center the content */
+  padding: 1rem; /* Add padding */
+}
+
+.feature-bottom-section-content-items {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Full width */
+  max-width: 400px; /* Limit maximum width for each item */
+  margin: 1rem 0; /* Add vertical margin */
+  text-align: center; /* Center text */
+}
+
+.feature-bottom-section-content-items h1 {
+  font-size: 1.5rem; /* Adjust heading size for smaller screens */
+  margin-bottom: 1rem; /* Add margin for spacing */
+}
+
+.feature-bottom-section-content-items p {
+  font-size: 1rem; /* Adjust paragraph size for smaller screens */
+}
+
+/* Responsive Design */
+@media (min-width: 769px) {
+  .feature-bottom-section {
+    flex-direction: row; /* Arrange items horizontally on larger screens */
+    align-items: flex-start; /* Align items at the start */
+    justify-content: space-evenly; /* Space items evenly */
+    padding: 3rem 20rem; /* Larger padding for larger screens */
+  }
+
+  .feature-bottom-section-content {
+    flex-direction: row; /* Arrange items horizontally */
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: space-between; /* Space items evenly */
+  }
+
+  .feature-bottom-section-content-items {
+    width: 30%; /* Set width for each item */
+    max-width: none; /* Remove maximum width */
+    margin: 0; /* Remove margin */
+    text-align: left; /* Align text to the left */
+  }
+}
+
+@media (max-width: 768px) {
+  .feature-bottom-section-content {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+
+  .feature-bottom-section-content-items {
+    width: 100%; /* Full width for each item */
+  }
+}

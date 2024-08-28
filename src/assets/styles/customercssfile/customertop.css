@@ -1,0 +1,118 @@
+.customer-top {
+  background-color: #eafaf1;
+  padding: 1rem 25rem;
+}
+
+.customer-top h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  width: 50%;
+  margin: auto;
+}
+
+.customer-top .customer-top-cards {
+  display: flex;
+  gap: 50px;
+
+  align-items: center;
+  margin: 5rem 0;
+  width: 100%;
+
+}
+
+.customer-top-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex: 1;
+  width: 20%;
+  /* Allow each item to grow equally */
+  margin: 0 10px;
+  /* Add some spacing between items */
+}
+
+.customer-top-items img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  padding: 10px;
+  /* Rounded corners */
+  border: 5px solid black;
+  /* Black border with 5px width */
+}
+
+.customer-top-items p,
+.customer-top-items span,
+.customer-top-items a {
+  margin-top: 2rem;
+  /* Add spacing between text elements */
+}
+
+.customer-top-items p {
+  font-size: 1.8rem;
+}
+
+.customer-top-items span {
+  font-size: 1.4rem;
+  color: gray;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.customer-top-items a {
+  font-size: 1.6rem;
+  color: #00ad6a;
+  font-weight: 800;
+}
+
+.customer-bottom-content {
+  display: flex;
+  justify-content: space-evenly;
+  /* Distribute space between items */
+  align-items: flex-start;
+  /* Align items to the start of the flex container */
+  flex-wrap: wrap;
+  /* Allow items to wrap onto the next line when necessary */
+  padding: 0 20%;
+  /* Adjust padding to provide spacing */
+  margin-top: 20px;
+  /* Optional: Adds spacing above the container */
+}
+
+.customer-bottom-content-items {
+  display: flex;
+  flex-direction: column;
+  /* Keep content in a column layout */
+  align-items: flex-start;
+  /* Align text to the left */
+  width: 40%;
+  /* Width for two items per row with some space between */
+  margin-bottom: 20px;
+  /* Adds spacing between rows */
+  padding: 30px;
+  /* Adds padding inside the content boxes */
+  border: 1px solid black;
+  /* Border around each content item */
+  box-sizing: border-box;
+  /* Ensure padding and border are included in the width */
+}
+
+.customer-bottom-content-items p {
+  margin-bottom: 10px;
+  font-size: 24px;
+  /* Adds spacing between the paragraph and span */
+}
+
+.customer-bottom-content-items span {
+  font-weight: bold;
+  font-size: 18px;
+  /* Make the author's name bold */
+}
+
+.customer-bottom-content-items a {
+  text-decoration: none;
+  /* Removes underline from the link */
+  color: #00ad6a
+    /* Custom link color */
+}

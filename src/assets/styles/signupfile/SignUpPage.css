@@ -1,0 +1,15 @@
+.sign-up-page {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+}
+
+.form-container {
+  flex: 1;
+  margin-right: 2rem;
+}
+
+.content-container {
+  flex: 1;
+  max-width: 1000px;
+}

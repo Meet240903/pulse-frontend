@@ -1,0 +1,25 @@
+.blog-categories {
+  width: 200px;
+  padding: 2rem 20rem;
+  border-right: 1px solid #ddd;
+}
+
+.blog-categories h3 {
+  margin-bottom: 20px;
+  font-size: 1.9rem;
+}
+
+.blog-categories ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.blog-categories ul li {
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.blog-categories ul li:hover {
+  color: #00ad6a;
+}

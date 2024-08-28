@@ -1,0 +1,12 @@
+.blog-section {
+  display: flex;
+  margin: 20px;
+}
+
+.blog-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 150px;
+  flex: 1;
+  padding: 20px;
+}

@@ -1,0 +1,30 @@
+.sign-up-content {
+  padding: 2rem;
+}
+
+.sign-up-content h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.sign-up-content p {
+  margin-bottom: 1rem;
+}
+
+.sign-up-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+button {
+  background-color: #00ad6a;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #009e55;
+}

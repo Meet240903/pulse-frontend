@@ -1,0 +1,137 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 5rem;
+  background-color: #eafaf1;
+  position: relative;
+  gap: 6rem;
+}
+
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.8rem;
+  color: #00ad6a;
+}
+
+.menu-icon::before {
+  content: '☰'; /* Hamburger icon */
+}
+
+/* Navigation styles */
+.header-list {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  list-style: none;
+  font-weight: 700;
+  font-size: 1.6rem;
+  transition: transform 0.3s ease;
+}
+
+.header-list ul {
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header-list a {
+  text-decoration: none;
+  color: #00ad6a;
+}
+
+.header-list ul li:last-child {
+  border: 2px solid #00ad6a;
+  padding: 0.5rem 1rem;
+}
+
+.header-list ul li:last-child:hover {
+  box-shadow: 5px 5px 0px 0px #00ad6a;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .header {
+    padding: 1.5rem 2rem;
+  }
+
+  .header-list {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 1rem 1.5rem;
+  }
+
+  .header-list {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .header-list {
+    display: none;
+    width: 80%;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 100%;
+    left: 20px;
+    background-color: #eafaf1;
+    padding: 1rem;
+    z-index: 1000;
+  }
+
+  .header-list.open {
+    display: flex;
+  }
+
+  .header-list ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+  }
+
+  .header-list ul li {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .header-list ul li:last-child {
+    border: none;
+  }
+
+  .header-list ul li a {
+    padding: 1rem;
+    display: block;
+    color: #00ad6a;
+  }
+
+  .header-list ul li a:hover {
+    background-color: #f4f4f4;
+  }
+}

@@ -1,0 +1,33 @@
+.signup-trial {
+  text-align: center;
+  padding: 3rem 0;
+  background-color: #00ad6a;
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-decoration: underline;
+}
+
+/* Medium Devices (Tablets, 768px and up) */
+@media only screen and (max-width: 992px) {
+  .signup-trial {
+    font-size: 2rem; /* Slightly smaller font size */
+    padding: 2.5rem 0; /* Adjust padding */
+  }
+}
+
+/* Small Devices (Mobiles, 576px and up) */
+@media only screen and (max-width: 768px) {
+  .signup-trial {
+    font-size: 1.75rem; /* Smaller font size */
+    padding: 2rem 0; /* Adjust padding */
+  }
+}
+
+/* Extra Small Devices (Phones, less than 576px) */
+@media only screen and (max-width: 576px) {
+  .signup-trial {
+    font-size: 1.5rem; /* Even smaller font size */
+    padding: 1.5rem 0; /* Adjust padding */
+  }
+}

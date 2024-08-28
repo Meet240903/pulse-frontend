@@ -1,0 +1,71 @@
+.icon-container {
+  position: relative;
+  width: 80%;
+  max-width: 600px; /* Set a maximum width for larger screens */
+  height: 300px; /* Adjusted height for better proportion */
+  margin-top: 7rem; /* Center container and add margin */
+  margin-left: 50%;
+}
+
+.icon {
+  position: absolute;
+  font-size: 4rem; /* Adjust icon size */
+  width: 4rem; /* Ensure icons are square */
+  height: 4rem; /* Ensure icons are square */
+  animation: rotate 5s linear infinite;
+}
+
+.icon-1 {
+  animation-delay: 0s;
+}
+
+.icon-2 {
+  animation-delay: 1s;
+}
+
+.icon-3 {
+  animation-delay: 2s;
+}
+
+.icon-4 {
+  animation-delay: 3s;
+}
+
+.icon-5 {
+  animation-delay: 4s;
+}
+
+/* No icon-6 in use */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) translateX(100px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translateX(100px) rotate(-360deg);
+  }
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .icon-container {
+    height: 200px; /* Reduce height for smaller screens */
+  }
+  
+  .icon {
+    font-size: 3rem; /* Reduce icon size */
+    width: 3rem; /* Ensure icons are square */
+    height: 3rem; /* Ensure icons are square */
+  }
+}
+
+@media (max-width: 480px) {
+  .icon-container {
+    height: 150px; /* Further reduce height for very small screens */
+  }
+
+  .icon {
+    font-size: 2rem; /* Further reduce icon size */
+    width: 2rem; /* Ensure icons are square */
+    height: 2rem; /* Ensure icons are square */
+  }
+}
