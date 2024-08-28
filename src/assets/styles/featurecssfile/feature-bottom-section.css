@@ -17,7 +17,6 @@
   flex-direction: column; /* Stack items vertically on smaller screens */
   justify-content: center;
   align-items: center;
-  width: 100%;
   max-width: 1200px; /* Limit maximum width */
   margin: 0 auto; /* Center the content */
   padding: 1rem; /* Add padding */

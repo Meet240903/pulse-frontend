@@ -1,0 +1,24 @@
+/* Add this CSS to your stylesheet */
+.cash-flow-chart-container {
+    width: 60%;
+    height: 300px;
+    margin: auto;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 1rem; /* Add padding to prevent content from touching the edges */
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .cash-flow-chart-container {
+      height: 250px; /* Adjust height for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .cash-flow-chart-container {
+      height: 200px; /* Further adjust height for very small screens */
+      width: 80%;
+    }
+  }
+  

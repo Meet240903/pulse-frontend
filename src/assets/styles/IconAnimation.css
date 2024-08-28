@@ -1,6 +1,5 @@
 .icon-container {
   position: relative;
-  width: 80%;
   max-width: 600px; /* Set a maximum width for larger screens */
   height: 300px; /* Adjusted height for better proportion */
   margin-top: 7rem; /* Center container and add margin */

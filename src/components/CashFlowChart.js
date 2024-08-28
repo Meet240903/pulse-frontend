@@ -10,6 +10,7 @@ import {
 	ResponsiveContainer,
 	Line,
 } from "recharts";
+import "../assets/styles/cashFlowChart.css"; // Import your CSS file
 
 const CashFlowChart = () => {
 	const [data, setData] = useState([]);
@@ -63,15 +64,7 @@ const CashFlowChart = () => {
 	};
 
 	return (
-		<div
-			style={{
-				width: "50%",
-				height: 300,
-				marginLeft: "auto",
-				border: "1px solid #ccc",
-				borderRadius: "15px",
-			}}
-		>
+		<div className="cash-flow-chart-container">
 			<ResponsiveContainer width="100%" height="100%">
 				<BarChart
 					data={data}

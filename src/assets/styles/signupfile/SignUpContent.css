@@ -8,10 +8,12 @@
 .sign-up-content h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
+  text-align: left;
 }
 
 .sign-up-content p {
   margin-bottom: 1rem;
+  text-align: left;
 }
 
 .sign-up-content h2 {
@@ -19,17 +21,17 @@
   margin-bottom: 1rem;
 }
 
-button {
+.switch-now-btn {
   background-color: #00ad6a;
   color: white;
   padding: 0.75rem 1.5rem;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  font-size: 1rem; /* Ensure button text is readable */
+  font-size: 1rem; /* Ensure .switch-now-btn text is readable */
 }
 
-button:hover {
+.switch-now-btn:hover {
   background-color: #009e55;
 }
 
@@ -55,9 +57,9 @@ button:hover {
     font-size: 1.25rem; /* Smaller font size for subheadings */
   }
 
-  button {
+  .switch-now-btn {
     padding: 0.5rem 1rem; /* Adjusted padding for smaller screens */
-    font-size: 0.9rem; /* Slightly smaller font size for buttons */
+    font-size: 0.9rem; /* Slightly smaller font size for .switch-now-btns */
   }
 }
 
@@ -79,8 +81,8 @@ button:hover {
     font-size: 1.4rem; /* Slightly smaller font size for subheadings */
   }
 
-  button {
+  .switch-now-btn {
     padding: 0.65rem 1.25rem; /* Adjusted padding for medium-sized screens */
-    font-size: 0.95rem; /* Slightly smaller font size for buttons */
+    font-size: 0.95rem; /* Slightly smaller font size for .switch-now-btns */
   }
 }

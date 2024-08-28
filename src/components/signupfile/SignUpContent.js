@@ -19,7 +19,7 @@ const SignUpContent = () => {
 				financial accounts, currencies, or auditing needs, you should try our
 				Pulse Unlimited plan for only $30 more per month.
 			</p>
-			<button>Switch now</button>
+			<button className="switch-now-btn">Switch now</button>
 		</div>
 	);
 };
