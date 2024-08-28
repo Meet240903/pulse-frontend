@@ -1,15 +1,53 @@
+/* Base styles for SignUpPage */
 .sign-up-page {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: row; /* Default direction for larger screens */
+  justify-content: space-between;
   padding: 2rem;
+  gap: 2rem; /* Add space between columns */
 }
 
 .form-container {
   flex: 1;
-  margin-right: 2rem;
+  margin-right: 2rem; /* Space between form and content */
 }
 
 .content-container {
   flex: 1;
-  max-width: 1000px;
+  max-width: 1000px; /* Limit max-width for content */
+}
+
+/* Responsive styles */
+
+/* Tablets and small desktops */
+@media (max-width: 1024px) {
+  .sign-up-page {
+    flex-direction: column; /* Stack form and content vertically */
+    align-items: center; /* Center content */
+  }
+
+  .form-container, .content-container {
+    margin-right: 0; /* Remove margin on smaller screens */
+    margin-bottom: 2rem; /* Add space between stacked items */
+  }
+
+  .content-container {
+    max-width: none; /* Remove max-width restriction */
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 767px) {
+  .sign-up-page {
+    padding: 1rem; /* Reduced padding for mobile screens */
+  }
+
+  .form-container, .content-container {
+    width: 100%; /* Full width for form and content */
+    margin-bottom: 1rem; /* Adjust margin between stacked items */
+  }
+
+  .content-container {
+    padding: 0; /* Remove padding for mobile */
+  }
 }

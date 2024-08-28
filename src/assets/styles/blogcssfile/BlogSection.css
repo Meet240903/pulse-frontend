@@ -1,12 +1,39 @@
+/* General styles for the blog section */
 .blog-section {
   display: flex;
   margin: 20px;
+  flex-wrap: wrap; /* Allows wrapping of child elements */
 }
 
 .blog-cards-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 150px;
+  gap: 20px; /* Adjusted for better spacing */
   flex: 1;
   padding: 20px;
+  box-sizing: border-box; /* Ensure padding doesn't affect the width */
+}
+
+/* Responsive styles */
+
+/* Mobile devices (portrait and landscape) */
+@media (max-width: 767px) {
+  .blog-section {
+    flex-direction: column; /* Stack the sidebar and blog cards vertically on small screens */
+  }
+
+  .blog-cards-container {
+    grid-template-columns: 1fr; /* Single column layout on small screens */
+    gap: 10px; /* Reduced gap for smaller screens */
+    padding: 10px; /* Reduced padding on small screens */
+  }
+}
+
+/* Tablets and small desktops */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .blog-cards-container {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Adjust column width */
+    gap: 15px; /* Slightly reduced gap */
+    padding: 15px; /* Adjust padding */
+  }
 }

@@ -1,7 +1,9 @@
+/* General styles for the sidebar */
 .blog-categories {
-  width: 200px;
-  padding: 2rem 20rem;
+  width: 500px;
+  padding: 2rem;
   border-right: 1px solid #ddd;
+  box-sizing: border-box; /* Ensure padding doesn't affect the width */
 }
 
 .blog-categories h3 {
@@ -22,4 +24,40 @@
 
 .blog-categories ul li:hover {
   color: #00ad6a;
+}
+
+/* Responsive styles */
+
+/* Mobile devices (portrait and landscape) */
+@media (max-width: 767px) {
+  .blog-categories {
+    width: 100%; /* Full width on mobile */
+    padding: 1rem;
+    border-right: none; /* Remove border on mobile */
+    border-bottom: 1px solid #ddd; /* Add bottom border for separation */
+  }
+
+  .blog-categories h3 {
+    font-size: 1.5rem;
+  }
+
+  .blog-categories ul li {
+    font-size: 1rem;
+  }
+}
+
+/* Tablets and small desktops */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .blog-categories {
+    width: 100%; /* Full width on tablets */
+    padding: 1.5rem;
+  }
+
+  .blog-categories h3 {
+    font-size: 1.7rem;
+  }
+
+  .blog-categories ul li {
+    font-size: 1.1rem;
+  }
 }
