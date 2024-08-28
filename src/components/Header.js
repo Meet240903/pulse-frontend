@@ -23,19 +23,19 @@ const Header = () => {
       <nav className={`header-list ${isMenuOpen ? "open" : ""}`}>
         <ul>
           <li>
-            <a href="/feature">Features</a>
+            <Link to="/feature">Features</Link>
           </li>
           <li>
-            <a href="/customer">Customer Stories</a>
+            <Link to="/customer">Customer Stories</Link>
           </li>
           <li>
-            <a href="/pricing">Pricing</a>
+            <Link to="/pricing">Pricing</Link>
           </li>
           <li>
-            <a href="/blog">Blog</a>
+            <Link to="/blog">Blog</Link>
           </li>
           <li>
-            <a href="/signup">Sign Up</a>
+            <Link to="/signup">Sign Up</Link>
           </li>
         </ul>
       </nav>
