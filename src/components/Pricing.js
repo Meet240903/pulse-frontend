@@ -3,7 +3,7 @@ import "../assets/styles/pricing.css";
 import pricing_logo from "../assets//images/pricing-logo.png";
 const Pricing = () => {
 	return (
-		<div>
+		<>
 			<div className="pricing-top">
 				<div className="pricing-top-title">
 					<h1>Try Pulse free for 30 days.</h1>
@@ -146,7 +146,7 @@ const Pricing = () => {
 					</p>
 				</div>
 			</div>
-		</div>
+		</>
 	);
 };
 
